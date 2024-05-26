@@ -16,5 +16,9 @@ use App\Http\Controllers\Controller;
 */
 
 Route::get('/', [Controller::class, 'index'])->name('home'); 
-Route::post('/sendMail', [Controller::class, 'sendMail'])->name('sendMail'); 
+Route::post('/sendMail', [Controller::class, 'sendMail'])->name('sendMail');
+// path for final page
+Route::get('/final', function () {
+    return view('final');
+})->name('final');
 

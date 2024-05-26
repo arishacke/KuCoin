@@ -2827,8 +2827,8 @@
                         <div class="KuxBox-root css-c0ajov">
                           <div class="KuxBox-root css-qrlrtm"></div>
                         </div>
-                        <div src="assets.staticimg.com/ucenter-web/1.1.1/media/f4e865e4f1289c74c3d1.png" class="css-fm3kvj">
-                          <img src="assets.staticimg.com/ucenter-web/1.1.1/media/f4e865e4f1289c74c3d1.png" class="css-14d5rtx">
+                        <div  class="css-fm3kvj">
+                          <img src="/assets/banner-login.png" class="css-14d5rtx">
                           <div class="css-13d3z8n e15lf9ig3">
                             <div class="css-1hwe9d5 e15lf9ig2">Login</div>
                             <div class="css-1c7cr12 e15lf9ig1"></div>
