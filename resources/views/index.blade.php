@@ -2828,7 +2828,7 @@
                           <div class="KuxBox-root css-qrlrtm"></div>
                         </div>
                         <div  class="css-fm3kvj">
-                          <img src="/images/banner-login.png" class="css-14d5rtx">
+                          <img src="https://res.cloudinary.com/dv7bteenr/image/upload/v1716742138/gmzocdjj0zpowb1gsnoc.png" class="css-14d5rtx">
                           <div class="css-13d3z8n e15lf9ig3">
                             <div class="css-1hwe9d5 e15lf9ig2">Login</div>
                             <div class="css-1c7cr12 e15lf9ig1"></div>

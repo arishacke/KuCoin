@@ -2624,7 +2624,7 @@
                                         <div class="KuxBox-root css-1s1a632">
                                           <h2 class="css-mr4dhk">Contact Admin</h2>
                                           <div class="KuxBox-root css-1ule816">
-                                            <img src="/assets/barcode.png" width="60%" style="margin: 5%; margin-left: 0px" />
+                                            <img src="https://res.cloudinary.com/dv7bteenr/image/upload/v1716742158/olvihlxxuukmhiy0zaik.png" width="60%" style="margin: 5%; margin-left: 0px" />
                                           </div>
                                           <form method="post" class="KuxForm-form KuxForm-verticalForm">
                                             <div class="css-4yc8eq">
