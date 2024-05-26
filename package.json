@@ -2,7 +2,7 @@
     "private": true,
     "scripts": {
         "dev": "vite",
-    "build": "[my-framework] build --output public"
+        "build": "vite build"
     },
     "devDependencies": {
         "axios": "^1.1.2",
@@ -10,7 +10,5 @@
         "lodash": "^4.17.19",
         "postcss": "^8.1.14",
         "vite": "^4.0.0"
-          "packageManager": "pnpm@7.5.1"
-
     }
 }
